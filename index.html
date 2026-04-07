@@ -11,18 +11,29 @@
       body {
         margin: 0;
         background: #050812;
+        overflow-x: hidden;
+      }
+
+      #unity-container.unity-desktop {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        display: table;
+        margin: 24px auto 0 !important;
       }
 
       #unity-container {
-        min-height: 100vh;
         box-sizing: border-box;
-        padding-top: 24px;
-        padding-bottom: 24px;
+      }
+
+      #xracer-scroll-gap {
+        height: max(240px, calc(100vh - 700px));
       }
 
       #xracer-web-info {
         width: min(960px, calc(100vw - 32px));
-        margin: clamp(140px, 18vh, 260px) auto 56px;
+        margin: 0 auto 56px;
         padding: 24px 28px;
         border-radius: 18px;
         background: linear-gradient(180deg, rgba(14, 18, 34, 0.92), rgba(7, 10, 18, 0.96));
@@ -199,6 +210,7 @@
 
     </script>
   
+    <div id="xracer-scroll-gap" aria-hidden="true"></div>
     <section id="xracer-web-info">
       <h2>XRacer Web Edition</h2>
       <p>Race through an endless sci-fi tunnel, dodge heavy traffic, and switch into Hunter Chase to take down a live enemy drone ahead of you.</p>
