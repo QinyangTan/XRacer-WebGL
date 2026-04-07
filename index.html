@@ -6,6 +6,62 @@
     <title>Unity Web Player | X-Racer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ac51db4f95b2.ico">
     <link rel="stylesheet" href="TemplateData/style.d83706922d00.css">
+  
+    <style>
+      #xracer-web-info {
+        width: min(960px, calc(100vw - 32px));
+        margin: 24px auto 40px;
+        padding: 24px 28px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(14, 18, 34, 0.92), rgba(7, 10, 18, 0.96));
+        border: 1px solid rgba(123, 182, 255, 0.24);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+        color: #e8eefc;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+
+      #xracer-web-info h2,
+      #xracer-web-info h3 {
+        margin: 0 0 12px;
+        color: #ffffff;
+      }
+
+      #xracer-web-info h2 {
+        font-size: 30px;
+      }
+
+      #xracer-web-info h3 {
+        font-size: 19px;
+        margin-top: 20px;
+      }
+
+      #xracer-web-info p {
+        margin: 0 0 14px;
+        color: #cfd9f5;
+      }
+
+      #xracer-web-info ul {
+        margin: 0 0 16px 20px;
+        padding: 0;
+      }
+
+      #xracer-web-info li {
+        margin: 0 0 8px;
+      }
+
+      #xracer-web-info strong {
+        color: #ffffff;
+      }
+
+      #xracer-web-info code {
+        padding: 2px 7px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #a8d4ff;
+      }
+    </style>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -130,5 +186,25 @@
       document.body.appendChild(script);
 
     </script>
+  
+    <section id="xracer-web-info">
+      <h2>XRacer Web Edition</h2>
+      <p>Race through an endless sci-fi tunnel, dodge heavy traffic, and switch into Hunter Chase to take down a live enemy drone ahead of you.</p>
+      <h3>Controls</h3>
+      <ul>
+        <li><strong>Steer:</strong> <code>A / D</code> or <code>Left / Right Arrow</code></li>
+        <li><strong>Pause:</strong> <code>Space</code></li>
+        <li><strong>Switch mode on menu:</strong> <code>M</code></li>
+      </ul>
+      <h3>Hunter Chase</h3>
+      <ul>
+        <li><strong>Fire blaster:</strong> <code>J</code></li>
+        <li><strong>Launch homing missile:</strong> <code>K</code> with a 10 second cooldown</li>
+        <li><strong>Goal:</strong> destroy the enemy drone before you crash</li>
+      </ul>
+      <h3>Endurance Run</h3>
+      <p>Stay alive as long as possible, gather credits, and chase a new distance record.</p>
+    </section>
+
   </body>
 </html>
